@@ -1,0 +1,1 @@
+In questa cartella verranno salvati i file contenenti le liste di link

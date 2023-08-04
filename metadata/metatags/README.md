@@ -1,0 +1,1 @@
+In questa cartella verranno salvati i file contenenti i metadati estratti dai metatags per la SEO

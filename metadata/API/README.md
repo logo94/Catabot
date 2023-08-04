@@ -1,0 +1,1 @@
+In questa cartella verranno salvati i file contenenti i metadati ottenuti tramite API di Archive-it
