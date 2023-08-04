@@ -1,5 +1,5 @@
 ![](https://img.shields.io/badge/Python-3.8%2B-green.svg)
-![](https://img.shields.io/badge/Standard-DublinCore-violet.svg)
+![](https://img.shields.io/badge/Schema-DublinCore-violet.svg)
 ![](https://img.shields.io/badge/Export-CSV-orange.svg)
 
 <p align="center">
