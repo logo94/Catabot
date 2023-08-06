@@ -36,56 +36,56 @@ def get_metatags(doc_url, csv_style):
     
     multirow = []
 
-    title_attrs = ['citation_title', 'DC.Title', 'DC.title', 'dcterms.title', 'DCTERMS.title', 'title']
+    title_attrs = ['citation_title', 'DC.Title', 'DC.title', 'dc.title', 'dcterms.title', 'dcterms:title', 'DCTERMS.title', 'title', 'twitter:title']
     title_props = ['og:title']
 
     creator = ''
-    creator_attrs = ['DC.Creator.PersonalName', 'DC.Creator', 'DC.creator', 'dc:creator', 'dcterms.creator', 'DCTERMS.creator', 'DCterms.creator', 'citation_author', 'creator', 'author']
+    creator_attrs = ['DC.Creator.PersonalName', 'DC.Creator', 'DC.creator', 'dc.creator', 'dc:creator', 'dcterms.creator', 'dcterms:creator', 'DCTERMS.creator', 'DCterms.creator', 'citation_author', 'creator', 'author', 'twitter:creator']
     creator_props = []
     
     publisher = ''
-    publisher_attrs = ['DC.Publisher', 'DC.publisher', 'dc:publisher', 'dcterms.publisher', 'DCTERMS.publisher', 'citation_publisher', 'publisher']
+    publisher_attrs = ['DC.Publisher', 'DC.publisher', 'dc.publisher', 'dc:publisher', 'dcterms:publisher', 'dcterms.publisher', 'DCTERMS.publisher', 'citation_publisher', 'publisher']
     publisher_props = ['article:publisher', 'og:site_name']
     
     contributor = ''
-    contributor_attrs = ['DC.Contributor', 'DC.contributor', 'dc:contributor', 'dcterms.contributor', 'DCTERMS.contributor', 'citation_contributor']
+    contributor_attrs = ['DC.Contributor', 'DC.contributor', 'dc.contributor', 'dc:contributor', 'dcterms.contributor', 'dcterms:contributor', 'DCTERMS.contributor', 'citation_contributor']
     contributor_props = ['article:contributor']
 
     date = ""
-    dc_date_attrs = ['DC.Date.created', 'DC.Date', 'DC.date', 'dcterms.date', 'DCTERMS.date', 'citation_publication_date', 'citation_date', 'date-created']
+    dc_date_attrs = ['DC.Date.created', 'DC.Date', 'dc.date', 'DC.date', 'dcterms.date', 'dcterms:date', 'DCTERMS.date', 'citation_publication_date', 'citation_date', 'date-created']
     dc_date_props = ['article:published_time', 'article:modified_time']
 
     dc_type = ""
-    dc_type_attrs = ['DC.Type', 'DC.type', 'dcterms.type', 'DCTERMS.type', 'DC.Type.articleType']
+    dc_type_attrs = ['DC.Type', 'DC.type', 'dc.type', 'dcterms.type', 'dcterms:type', 'DCTERMS.type', 'DC.Type.articleType', 'twitter:card']
     dc_type_props = ['og:type']
     
     dc_format = ''
 
     source = ''
-    source_attrs = ['DC.Source', 'DC.source', 'dc.source', 'dc:source']
+    source_attrs = ['DC.Source', 'DC.source', 'dc.source', 'dc:source', 'dcterms:source', 'DCTERMS.source', 'twitter:site']
     source_props = ['og:site_name']
     
     language = ""
-    language_attrs = ['DC.Language', 'DC.language', 'dc:language', 'dcterms.language', 'citation_language']
+    language_attrs = ['DC.Language', 'DC.language', 'dc:language', 'dc.language', 'dcterms.language', 'dcterms:language', 'citation_language']
     language_props = ['og:locale']
 
     relation = ""
-    relation_attrs = ['DC.Relation', 'DC.relation', 'dcterms.relation', 'DCTERMS.relation', 'citation_journal_title']
+    relation_attrs = ['DC.Relation', 'DC.relation', 'dc.relation', 'dcterms.relation', 'dcterms:relation', 'DCTERMS.relation', 'citation_journal_title']
     relation_props = []
 
     coverage = ''
-    coverage_attrs = ['DC.coverage', 'DC.coverage', 'dcterms.coverage', 'DCTERMS.coverage']
+    coverage_attrs = ['DC.coverage', 'DC.coverage', 'dc.coverage', 'dcterms.coverage', 'dcterms:coverage', 'DCTERMS.coverage']
     
     rights = ''
-    rights_attrs = ['DC.Rights', 'DC.rights', 'dcterms.rights', 'DCTERMS.rights', 'copyright']
+    rights_attrs = ['DC.Rights', 'DC.rights', 'dc.rights', 'dcterms.rights', 'dcterms:rights', 'DCTERMS.rights', 'copyright']
     rights_props = []
 
     description = ""
-    description_attrs = ['DC.Description', 'DC.description', 'DC.description', 'dcterms.description', 'DCTERMS.description', 'citation_abstract', 'dcterms.abstract', 'DCTERMS.abstract', 'abstract', 'description']
+    description_attrs = ['DC.Description', 'DC.description', 'dc.description', 'dcterms.description', 'dcterms:description', 'DCTERMS.description', 'citation_abstract', 'dcterms.abstract', 'DCTERMS.abstract', 'abstract', 'description', 'twitter:description']
     description_props = ['og:description']
     
     subject = ""
-    subject_attrs = ['DC.Subject', 'DC.subject', 'citation_keywords', 'keywords']
+    subject_attrs = ['DC.Subject', 'DC.subject', 'dc.subject', 'dcterms.subject', 'dcterms:subject', 'citation_keywords', 'keywords']
     subject_props = []
             
     try:
