@@ -3,9 +3,8 @@ from csv import writer
 from bs4 import BeautifulSoup as bs
 from time import sleep
 from include.metamodel import get_metatags
-from include.tools import headerow
+from include.tools import headerow, date
 import json
-from datetime import date
 
 def apiReq(crawl_ID, api_key):
     url = "https://partner.archive-it.org/api/reports/crawled-detail/" + crawl_ID + "?format=csv&mimetype=text/html"
@@ -44,7 +43,7 @@ def archive_api_test(crawl_ID, apiKey):
 
 def archive_api_csv(crawl_ID, apiKey, csv_style):
     
-    with open('metadata/metatags/'+date.today().strftime("%d%m%y")+'_'+crawl_ID + '_'+csv_style+'_document_metadata.csv', 'w+', encoding='utf8', newline='') as csv_file:
+    with open('metadata/metatags/'+date()+'_'+crawl_ID + '_'+csv_style+'_document_metadata.csv', 'w+', encoding='utf8', newline='') as csv_file:
         
         api_key = apiKey
         
