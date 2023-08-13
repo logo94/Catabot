@@ -8,7 +8,6 @@ import string
 from include.tools import get_host, random_user, headerow, date
 import requests
 from bs4 import BeautifulSoup as bs
-from datetime import datetime
 
 def oai_count(url):
     addr = url + '?verb=ListRecords&metadataPrefix=oai_dc'
@@ -73,8 +72,6 @@ def csv_aggr_oai(url):
             header = headerow('single')
             thewriter.writerow(header)
 
-            i = 0
-
             for record in oaiReq(url):
                 row = []
                 try:
@@ -97,7 +94,6 @@ def csv_aggr_oai(url):
                 row += popola(element['description'])
                 row += popola(element['subject'])
                 
-                print(i+1)
                 thewriter.writerow(row)
                 sleep(0.1)
 
