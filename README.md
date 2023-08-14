@@ -8,7 +8,7 @@
 
 Catabot è un'applicazione Desktop scritta in linguaggio Python che permette l'estrazione automatica di metadati descrittivi da pagine web.
 
-Come standard di metadatazione Catabot utilizza come riferimento l'insieme dei 15 elementi descrittivi elaborati dal Web Archiving Metadata Working Group (WAM) di OCLC, espressi secondo lo standard Dublin Core e trasversali rispetto ai principali standard di metadatazione (Dublin Core, MARC21, EAD, MODS e Schema.org).
+Come standard di metadatazione Catabot utilizza come riferimento l'insieme dei 15 elementi descrittivi Dublin Core, trasversali rispetto ai principali standard di metadatazione (Dublin Core, MARC21, EAD, MODS e Schema.org).
 
 Partendo da un URL o da una lista di link, per la raccolta dei metadati Catabot interroga direttamente le pagine di un sito e attraverso web scraping estrae informazioni strutturate che verranno esportate in formato CSV.
 
