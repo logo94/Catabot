@@ -519,7 +519,4 @@ def main():
     window.close()
 
 if __name__ == '__main__':
-    try:
-        main()
-    except:
-        raise Exception()
+    main()
