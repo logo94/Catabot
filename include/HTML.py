@@ -1,5 +1,4 @@
 from include.tools import get_html, headerow, get_host, date
-from datetime import datetime
 import csv
 import json
 from time import sleep
