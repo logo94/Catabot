@@ -1,8 +1,8 @@
 import csv
 from include.tools import get_host, get_html, normalize_url, date
-from datetime import datetime
-## TEST ##
 
+
+## TEST ##
 # Single page
 def test_surl_link(url, crawl_range):
     if not 'http' in url:
