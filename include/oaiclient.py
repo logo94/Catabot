@@ -105,8 +105,8 @@ def csv_aggr_oai(url):
                 thewriter.writerow(row)
                 sleep(0.1)
 
-    except Exception as error:
-        return 'Errore: ' + error
+    except:
+        return 'Set Dublin Core non disponibile'
 
     return 'File CSV salvato correttamente all\'interno della cartella metadata/OAI/'
 
@@ -147,8 +147,8 @@ def csv_multi_oai(url):
                 thewriter.writerow(row)
                 sleep(0.1)
                        
-    except Exception as error:
-        return 'Errore: ' + error
+    except:
+        return 'Set Dublin Core non disponibile'
 
     return 'File CSV salvato correttamente all\'interno della cartella metadati/OAI/'
 
