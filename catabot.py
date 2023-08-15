@@ -242,20 +242,20 @@ def main():
     html_col2 = [
         [sg.Push(), sg.Text('Element HTML'), sg.Push()],
         [sg.Push()],
-        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_title', size=(7,0)), sg.Push()],
-        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_creator', size=(7,0)), sg.Push()],
-        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_pub', size=(7,0)), sg.Push()],
-        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_contr', size=(7,0)), sg.Push()],
-        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_date', size=(7,0)), sg.Push()],
-        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_type', size=(7,0)), sg.Push()],
-        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_format', size=(7,0)), sg.Push()],
-        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_source', size=(7,0)), sg.Push()],
-        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_lang', size=(7,0)), sg.Push()],
-        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_relation', size=(7,0)), sg.Push()],
-        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_cover', size=(7,0)), sg.Push()],
-        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_rights', size=(7,0)), sg.Push()],
-        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_desc', size=(7,0)), sg.Push()],
-        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_sbj', size=(7,0)), sg.Push()]
+        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_title', size=(7,7)), sg.Push()],
+        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_creator', size=(7,7)), sg.Push()],
+        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_pub', size=(7,7)), sg.Push()],
+        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_contr', size=(7,7)), sg.Push()],
+        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_date', size=(7,7)), sg.Push()],
+        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_type', size=(7,7)), sg.Push()],
+        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_format', size=(7,7)), sg.Push()],
+        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_source', size=(7,7)), sg.Push()],
+        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_lang', size=(7,7)), sg.Push()],
+        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_relation', size=(7,7)), sg.Push()],
+        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_cover', size=(7,7)), sg.Push()],
+        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_rights', size=(7,7)), sg.Push()],
+        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_desc', size=(7,7)), sg.Push()],
+        [sg.Push(), sg.Combo(values=html_elements, key='HTML_element_sbj', size=(7,7)), sg.Push()]
     ]
 
     html_col3 = [
