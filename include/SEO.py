@@ -3,7 +3,6 @@ from include.metamodel import get_metatags
 from include.tools import headerow, date
 import json
 from time import sleep
-from datetime import datetime
 
 def meta_read_test_csv(filepath):
     try:
