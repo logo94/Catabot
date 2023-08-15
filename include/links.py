@@ -121,7 +121,7 @@ def link_surl_csv(url, crawl_cover, crawl_range):
         link_list = test_surl_link(url, crawl_range)
     elif crawl_cover == 'deep':
         link_list = test_surl_links(url, crawl_range)
-    with open('./metadata/links/'+date()+'_'+domain+'_onepage_links.csv', 'w+', encoding='utf8', newline='') as file:
+    with open('./metadata/Links/'+date()+'_'+domain+'_onepage_links.csv', 'w+', encoding='utf8', newline='') as file:
         writer = csv.writer(file)
         for link in link_list:
             row = []
@@ -136,7 +136,7 @@ def link_progress_csv(url_pre, p_from, p_to, url_post, crawl_cover, crawl_range)
         link_list = test_progress_link(url_pre, p_from, p_to, url_post, crawl_range)
     elif crawl_cover == 'deep':
         link_list = test_progress_links(url_pre, p_from, p_to, url_post, crawl_range)
-    with open('./metadata/links/'+date()+'_'+domain+'_urlprogress_links.csv', 'w+', encoding='utf8', newline='') as file:
+    with open('./metadata/Links/'+date()+'_'+domain+'_urlprogress_links.csv', 'w+', encoding='utf8', newline='') as file:
         writer = csv.writer(file)
         for link in link_list:
             row = []
